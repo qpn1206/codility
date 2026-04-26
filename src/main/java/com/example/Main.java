@@ -4,6 +4,10 @@ import java.util.Arrays;
 import com.problems.CardPayments;
 import com.problems.CastleBuilding;
 import com.problems.CommonLetter;
+import com.problems.CountBananas;
+import com.problems.CreatePalindrome;
+import com.problems.DiversityString;
+import com.problems.EraseOneLetter;
 import com.problems.TheWidestPath;
 
 public class Main {
@@ -35,5 +39,26 @@ public class Main {
         // String[] S = {"gr", "sd", "rg"};
         String[] S = {"bdafg", "ceagi"};
         System.out.println("Common letter: " + Arrays.toString(CommonLetter.solution(S)));
+
+        // String bananas = "NAABXXAN";
+        // String bananas = "NAANAAXNABABYNNBZ";
+        String bananas = "QABAAAWOBL";
+        System.out.println("Count Bananas: " + CountBananas.solution(bananas));
+
+        // String palindrome = "?ab??a";
+        // String palindrome = "bab??a";
+        String palindrome = "?a?";
+        System.out.println("Create Palindrome: " + CreatePalindrome.solution(palindrome));
+
+
+        System.out.println("Diversity String: " + DiversityString.solution(3));
+        System.out.println("Diversity String: " + DiversityString.solution(5));
+        System.out.println("Diversity String: " + DiversityString.solution(30));
+
+        // String eraseLetter = "acb";
+        // String eraseLetter = "hot";
+        String eraseLetter = "codility";
+        // String eraseLetter = "aaaa";
+        System.out.println("Erase One Letter: " + EraseOneLetter.solution(eraseLetter));
     }
 }
