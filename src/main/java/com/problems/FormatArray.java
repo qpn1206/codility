@@ -26,7 +26,7 @@ public class FormatArray {
         while (i < length) {
             lastCols = 0;
             int rowLength = Math.min(i + K, length);
-            int cols = Math.min(K, rowLength - i);
+            int cols = K > length ? length : K;
 
             // Print top border
             printBorder(cols, maxLen);

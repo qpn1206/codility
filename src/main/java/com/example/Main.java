@@ -77,7 +77,7 @@ public class Main {
                 .println("Forbidden Trios Swaps: " + ForbiddenTriosSwaps.solution(forbiddenTrios));
 
         FormatArray.solution(new int[] {4, 35, 80, 123, 12345, 44, 8, 5, 24, 3}, 4);
-        FormatArray.solution(new int[] {4, 35, 80, 123, 12345, 44, 8, 5, 24, 3, 22, 35}, 4);
-        FormatArray.solution(new int[] {4, 35, 80, 123, 44, 8, 5}, 10);
+        // FormatArray.solution(new int[] {4, 35, 80, 123, 12345, 44, 8, 5, 24, 3, 22, 35}, 4);
+        // FormatArray.solution(new int[] {4, 35, 80, 123, 44, 8, 5}, 10);
     }
 }
