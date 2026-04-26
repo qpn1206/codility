@@ -8,6 +8,9 @@ import com.problems.CountBananas;
 import com.problems.CreatePalindrome;
 import com.problems.DiversityString;
 import com.problems.EraseOneLetter;
+import com.problems.EvenPairsOnCycle;
+import com.problems.ForbiddenTriosSwaps;
+import com.problems.FormatArray;
 import com.problems.TheWidestPath;
 
 public class Main {
@@ -60,5 +63,21 @@ public class Main {
         String eraseLetter = "codility";
         // String eraseLetter = "aaaa";
         System.out.println("Erase One Letter: " + EraseOneLetter.solution(eraseLetter));
+
+
+        // int[] circle = {4, 2, 5, 8, 7, 3, 7};
+        // int[] circle = {14, 21, 16, 35, 22};
+        int[] circle = {5, 5, 5, 5, 5, 5};
+        System.out.println("Even Pairs on Cycle: " + EvenPairsOnCycle.solution(circle));
+
+        // String forbiddenTrios = "baaaaa";
+        // String forbiddenTrios = "baaabbaabbba";
+        String forbiddenTrios = "baabab";
+        System.out
+                .println("Forbidden Trios Swaps: " + ForbiddenTriosSwaps.solution(forbiddenTrios));
+
+        FormatArray.solution(new int[] {4, 35, 80, 123, 12345, 44, 8, 5, 24, 3}, 4);
+        FormatArray.solution(new int[] {4, 35, 80, 123, 12345, 44, 8, 5, 24, 3, 22, 35}, 4);
+        FormatArray.solution(new int[] {4, 35, 80, 123, 44, 8, 5}, 10);
     }
 }
