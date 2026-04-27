@@ -11,6 +11,9 @@ import com.problems.EraseOneLetter;
 import com.problems.EvenPairsOnCycle;
 import com.problems.ForbiddenTriosSwaps;
 import com.problems.FormatArray;
+import com.problems.SameDigitMerge;
+import com.problems.ShortestUniqueSubstring;
+import com.problems.SmallestDigitSum;
 import com.problems.TheWidestPath;
 
 public class Main {
@@ -79,5 +82,22 @@ public class Main {
         FormatArray.solution(new int[] {4, 35, 80, 123, 12345, 44, 8, 5, 24, 3}, 4);
         // FormatArray.solution(new int[] {4, 35, 80, 123, 12345, 44, 8, 5, 24, 3, 22, 35}, 4);
         // FormatArray.solution(new int[] {4, 35, 80, 123, 44, 8, 5}, 10);
+
+
+        int[] numbers = {30, 12, 29, 91};
+        // int[] numbers = {122, 21, 21, 23};
+        System.out.println("The Same digit merge: " + SameDigitMerge.solution(numbers));
+
+
+        // String uniqueSubstring = "abaaba";
+        // String uniqueSubstring = "zyzyzyz";
+        String uniqueSubstring = "aabbbabaaa";
+        System.out.println("Shortest Unique Substring: "
+                + ShortestUniqueSubstring.solution(uniqueSubstring));
+
+
+        System.out.println("Smallest Digit Sum: " + SmallestDigitSum.solution(16));
+        System.out.println("Smallest Digit Sum: " + SmallestDigitSum.solution(19));
+        System.out.println("Smallest Digit Sum: " + SmallestDigitSum.solution(7));
     }
 }
