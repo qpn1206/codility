@@ -1,12 +1,14 @@
 package com.example;
 
 import java.util.Arrays;
+import com.problems.AsphaltPatches;
 import com.problems.CardPayments;
 import com.problems.CastleBuilding;
 import com.problems.CommonLetter;
 import com.problems.CountBananas;
 import com.problems.CreatePalindrome;
 import com.problems.DiversityString;
+import com.problems.EndsTheSame;
 import com.problems.EraseOneLetter;
 import com.problems.EvenPairsOnCycle;
 import com.problems.ForbiddenTriosSwaps;
@@ -15,6 +17,7 @@ import com.problems.SameDigitMerge;
 import com.problems.ShortestUniqueSubstring;
 import com.problems.SmallestDigitSum;
 import com.problems.TheWidestPath;
+import com.problems.ValueOccurrences;
 
 public class Main {
     public static void main(String[] args) {
@@ -99,5 +102,25 @@ public class Main {
         System.out.println("Smallest Digit Sum: " + SmallestDigitSum.solution(16));
         System.out.println("Smallest Digit Sum: " + SmallestDigitSum.solution(19));
         System.out.println("Smallest Digit Sum: " + SmallestDigitSum.solution(7));
+
+
+        // int[] occurrences = {1, 1, 3, 4, 4, 4};
+        // int[] occurrences = {1, 2, 2, 2, 5, 5, 5, 8};
+        // int[] occurrences = {1, 1, 1, 1, 3, 3, 4, 4, 4, 4, 4};
+        int[] occurrences = {10, 10, 10};
+        System.out.println("Value Occurrences: " + ValueOccurrences.solution(occurrences));
+
+
+        // String road = ".x..x";
+        // String road = "x.xxxxx.x.";
+        // String road = "xx.xxx..";
+        String road = "xxxx";
+        System.out.println("Asphalt Patches: " + AsphaltPatches.solution(road));
+
+
+        // String endTheSame = "abbaa";
+        // String endTheSame = "aaaa";
+        String endTheSame = "abab";
+        System.out.println("Ends the same: " + EndsTheSame.solution(endTheSame));
     }
 }
